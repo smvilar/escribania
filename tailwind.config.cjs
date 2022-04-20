@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'Montserrat',
-        cursive: ['"Love Light"', 'cursive'],
+        cursive: ['"Love Light"', 'cursive']
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
