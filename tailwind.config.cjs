@@ -3,8 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Montserrat',
-        cursive: ['"Love Light"', 'cursive']
+        sans: 'Montserrat'
       }
     }
   },
