@@ -4,3 +4,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	main {
+		@apply text-slate-800;
+	}
+
+	h1 {
+		@apply text-4xl;
+		@apply sm:text-7xl;
+		@apply font-bold;
+	}
+	h2 {
+		@apply text-2xl;
+		@apply sm:text-4xl;
+		@apply font-bold;
+	}
+	p {
+		@apply sm:text-2xl;
+	}
+
+	a:hover {
+		@apply underline;
+	}
+}

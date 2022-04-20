@@ -2,48 +2,20 @@
   <title>Escribanía Lanzón</title>
 </svelte:head>
 
-<header class="fixed w-full bg-gradient-to-b text-white from-purple-500/70 py-12 flex justify-center">
-  <div class="w-3/4 flex justify-between items-center">
-    <h1 class="text-6xl font-cursive drop-shadow-lg">Escribanía Lanzón</h1>
-    <nav>
-      {#each navLinks as {href, title}}
-        <a class="text-xl mx-4 drop-shadow" {href}>{title}</a>
-      {/each}
-    </nav>
-  </div>
-</header>
-
-<Section id="inicio" class="bg-[url(/img/pexels-cottonbro-6814526.jpeg)] bg-cover text-white pt-48 pb-12">
-  La escribanía blablabla
-</Section>
-
-<Section id="acerca-de">
-  <h2>Patricia Adriana Lanzón</h2>
-</Section>
-
-<Section id="servicios">
-  <h2>Servicios</h2>
-</Section>
-
-<Section id="contacto">
-  <h2>Contacto</h2>
-</Section>
-
-<footer class="bg-purple-500 text-white py-4 flex justify-center">
-  <p class="w-3/4">
-    🏢 Uruguay 196 4º piso. CABA, Argentina<br />
-    📞 <a href="tel:+5491112341234">+54 911 1234 1234</a><br />
-    📧 <a href="mailto:escribanialanzon@gmail.com">escribanialanzon@gmail.com</a>
-  </p>
-</footer>
+<main class="flex justify-center sm:items-center bg-[url(/img/stone-wall.jpg)] bg-cover min-h-screen">
+  <article class="h-min m-px p-2 sm:px-20 sm:py-16 bg-orange-100/80 border-current border-2 sm:border-4 rounded-lg sm:rounded-2xl drop-shadow-xl">
+    <header class="mb-4 sm:mb-12">
+      <h1 class="sm:text-center border-b-2 border-current">Patricia Adriana Lanzón</h1>
+      <h2 class="sm:text-center uppercase">Escribanía</h2>
+    </header>
+    <p>
+      🏢 <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/rYGGcNGqypjxgNWn9">Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a><br />
+      📞 <a href="tel:+541143142009">4314-2009</a> | <a href="tel:+541143148715">4314-8715</a><br />
+      ⏱  Lunes a jueves, de 11 hs a 17 hs<br />
+      📧 <a href="mailto:escribanialanzon@gmail.com">escribanialanzon@gmail.com</a>
+    </p>
+  </article>
+</main>
 
 <script>
-  import Section from "$lib/Section.svelte"
-
-  const navLinks = [
-    { title: 'Inicio', href: '#inicio' },
-    { title: 'Sobre mí', href: '#acerca-de' },
-    { title: 'Servicios', href: '#servicios' },
-    { title: 'Contacto', href: '#contacto' },
-  ]
 </script>
