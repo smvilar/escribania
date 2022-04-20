@@ -25,7 +25,7 @@
         >Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a
       ><br />
       📞 <a href="tel:+541143142009">4314-2009</a> |
-      <a href="tel:+541143148715">4314-8715</a><br />
+      <a href="tel:+541143148715">4314-8815</a><br />
       ⏱ Lunes a jueves, de 11 hs a 17 hs<br />
       📧
       <a href="mailto:escribanialanzon@gmail.com">escribanialanzon@gmail.com</a>
