@@ -6,7 +6,7 @@
 </svelte:head>
 
 <main
-  class="flex justify-center sm:items-center bg-cover bg-stone-texture min-h-screen"
+  class="flex justify-center items-center bg-cover bg-stone-texture min-h-screen"
 >
   <article
     class="h-min m-px p-2 sm:px-20 sm:py-16 bg-orange-100/80 border-current border-2 sm:border-4 rounded-lg sm:rounded-2xl drop-shadow-xl"
