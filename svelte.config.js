@@ -12,12 +12,12 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/escribania',
+      base: dev ? '' : '/escribania'
     },
     prerender: {
       default: true
     }
-  },
+  }
 };
 
 export default config;
