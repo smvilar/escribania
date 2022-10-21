@@ -8,41 +8,43 @@
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
   <header class="w-full bg-banner bg-cover text-slate-100">
-    <div class="pt-4 px-2 sm:pt-12 sm:px-20 backdrop-brightness-50 backdrop-blur-sm">
-      <section class="pb-4 sm:pb-8">
-        <h1 class="border-b-2 border-purple-400">
-          Patricia A. Lanzón
-        </h1>
-        <h2 class="mb-2 sm:mb-4">Escribana</h2>
-        <h4>Registro Notarial 570</h4>
-        <h4>Matrícula 4344</h4>
-      </section>
-      <ul>
-        <li>
-          📞 Solicite turno al <a href="tel:+541143142009">4314-2009</a> ó
-          <a href="tel:+541143148715">4314-8815</a>
-        </li>
-        <li>
-          🏢 <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://goo.gl/maps/rYGGcNGqypjxgNWn9"
-            >Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a
-          >
-        </li>
-        <li>
-          📧 <a href="mailto:escribanialanzon@gmail.com">escribanialanzon@gmail.com</a>
-        </li>
-      </ul>
-      <nav class="mt-4 sm:mt-16 text-center">
-        <a href="#servicios">Servicios</a> •
-        <a href="#trayectoria">Trayectoria</a> •
-        <a href="#docencia">Actualidad docente</a> •
-        <a href="#vejez">Derecho de la vejez</a>
-      </nav>
+    <div class="flex flex-col items-center pt-4 px-2 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm">
+      <div class="w-full max-w-screen-lg">
+        <section class="pb-4 sm:pb-8">
+          <h1 class="border-b-2 border-purple-400">
+            Patricia A. Lanzón
+          </h1>
+          <h2 class="mb-2 sm:mb-4">Escribana</h2>
+          <h4>Registro Notarial 570</h4>
+          <h4>Matrícula 4344</h4>
+        </section>
+        <ul>
+          <li>
+            📞 Solicite turno al <a href="tel:+541143142009">4314-2009</a> ó
+            <a href="tel:+541143148715">4314-8815</a>
+          </li>
+          <li>
+            🏢 <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/rYGGcNGqypjxgNWn9"
+              >Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a
+            >
+          </li>
+          <li>
+            📧 <a href="mailto:escribanialanzon@gmail.com">escribanialanzon@gmail.com</a>
+          </li>
+        </ul>
+        <nav class="mt-4 sm:mt-16 text-center">
+          <a href="#servicios">Servicios</a> •
+          <a href="#trayectoria">Trayectoria</a> •
+          <a href="#docencia">Actualidad docente</a> •
+          <a href="#vejez">Derecho de la vejez</a>
+        </nav>
+      </div>
     </div>
   </header>
-  <section id="servicios" class="h-min m-px p-2 sm:px-20 sm:py-16 max-w-screen-lg">
+  <section id="servicios" class="h-min m-px p-2 sm:py-16 max-w-screen-lg">
     <header>
       <h3>Servicios</h3>
     </header>
@@ -85,7 +87,7 @@
       </li>
     </ul>
   </section>
-  <section id="trayectoria" class="h-min m-px p-2 sm:px-20 sm:py-16 max-w-screen-lg">
+  <section id="trayectoria" class="h-min m-px p-2 sm:py-16 max-w-screen-lg">
     <header>
       <h3 class="">Trayectoria</h3>
     </header>
@@ -129,12 +131,12 @@
       </p>
     </article>
   </section>
-  <section id="docencia" class="h-min m-px p-2 sm:px-20 sm:py-16">
+  <section id="docencia" class="h-min m-px p-2 sm:py-16">
     <header>
       <h3>Actualidad docente</h3>
     </header>
   </section>
-  <section id="vejez" class="h-min m-px p-2 sm:px-20 sm:py-16">
+  <section id="vejez" class="h-min m-px p-2 sm:py-16">
     <header>
       <h3>Derecho de la vejez</h3>
     </header>
