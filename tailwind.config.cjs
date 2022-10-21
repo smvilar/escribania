@@ -10,9 +10,9 @@ module.exports = {
         serif: 'Libre Baskerville'
       },
       backgroundImage: {
-        'banner': `url('${basePath}/img/banner.jpg')`,
+        banner: `url('${basePath}/img/banner.jpg')`,
         'stone-texture': `url('${basePath}/img/stone-wall.jpg')`
-      },
+      }
     }
   },
   plugins: []
