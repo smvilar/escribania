@@ -1,4 +1,10 @@
 <script>
+  import carnet from '$lib/assets/carnet.jpg'
+  import jorge from '$lib/assets/jorge.jpg'
+  import diploma from '$lib/assets/diploma.jpg'
+  import registro from '$lib/assets/registro.jpg'
+  import libro from '$lib/assets/libro.jpg'
+  import senado from '$lib/assets/senado.jpg'
 </script>
 
 <svelte:head>
@@ -133,14 +139,14 @@
         alt="Patricia Lanzón"
         width="400"
         height="400"
-        src="/img/carnet.jpg"
+        src={carnet}
       />
       <img
         class=""
         alt="Jorge M. Lanzón"
         width="400"
         height="400"
-        src="/img/jorge.jpg"
+        src={jorge}
       />
       <p>Escribano Jorge Mario Lanzón. Fundador.</p>
       <img
@@ -148,7 +154,7 @@
         alt="Recibida de Abogada"
         width="400"
         height="400"
-        src="/img/diploma.jpg"
+        src={diploma}
       />
       <p class="p-2 sm:text-lg">
         <strong>Patricia Adriana Lanzón</strong> es escribana titular del Registro
@@ -159,7 +165,7 @@
         alt="Colegio de Escribanos"
         width="400"
         height="400"
-        src="/img/registro.jpg"
+        src={registro}
       />
       <p class="clear-left p-2 sm:text-lg">
         Desde 2007 participa de la organización del <strong
@@ -184,14 +190,14 @@
           alt="Publicación de libro"
           width="400"
           height="400"
-          src="/img/libro.jpg"
+          src={libro}
         />
         <img
           class="sm:w-60"
           alt="En el Senado de la Nación"
           width="400"
           height="400"
-          src="/img/senado.jpg"
+          src={senado}
         />
       </div>
       <p class="p-2 sm:text-lg">
