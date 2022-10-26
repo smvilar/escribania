@@ -5,6 +5,8 @@
   import registro from '$lib/assets/registro.jpg'
   import libro from '$lib/assets/libro.jpg'
   import senado from '$lib/assets/senado.jpg'
+
+  import Section from '$lib/Section.svelte'
 </script>
 
 <svelte:head>
@@ -45,16 +47,13 @@
         <nav class="mt-4 sm:mt-16 text-center">
           <a href="#servicios">Servicios</a> •
           <a href="#trayectoria">Trayectoria</a> •
-          <a href="#docencia">Actualidad docente</a> •
-          <a href="#vejez">Derecho de la vejez</a>
+          <a href="#actualidad docente">Actualidad docente</a> •
+          <a href="#derecho de la vejez">Derecho de la vejez</a>
         </nav>
       </div>
     </div>
   </header>
-  <section id="servicios" class="h-min m-px p-2 sm:py-16 max-w-screen-lg">
-    <header>
-      <h3>Servicios</h3>
-    </header>
+  <Section name="Servicios">
     <ul class="flex flex-wrap gap-1 sm:gap-8">
       <li
         class="sm:max-w-[45%] bg-purple-400/20 rounded sm:rounded-lg p-2 sm:p-4"
@@ -128,11 +127,8 @@
         </small>
       </li>
     </ul>
-  </section>
-  <section id="trayectoria" class="h-min m-px p-2 sm:py-16 max-w-screen-lg">
-    <header>
-      <h3 class="">Trayectoria</h3>
-    </header>
+  </Section>
+  <Section name="Trayectoria">
     <article class="py-2 text-sailing-blue-dark">
       <img
         class="self-center"
@@ -212,15 +208,9 @@
         Nacional de Córdoba, Argentina.
       </p>
     </article>
-  </section>
-  <section id="docencia" class="h-min m-px p-2 sm:py-16">
-    <header>
-      <h3>Actualidad docente</h3>
-    </header>
-  </section>
-  <section id="vejez" class="h-min m-px p-2 sm:py-16">
-    <header>
-      <h3>Derecho de la vejez</h3>
-    </header>
-  </section>
+  </Section>
+  <Section name="Actualidad docente">
+  </Section>
+  <Section name="Derecho de la vejez">
+  </Section>
 </main>
