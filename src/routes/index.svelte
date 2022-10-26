@@ -1,12 +1,46 @@
-<script>
-  import carnet from '$lib/assets/carnet.jpg'
-  import jorge from '$lib/assets/jorge.jpg'
-  import diploma from '$lib/assets/diploma.jpg'
-  import registro from '$lib/assets/registro.jpg'
-  import libro from '$lib/assets/libro.jpg'
-  import senado from '$lib/assets/senado.jpg'
+<script lang="ts">
+  import carnet from '$lib/assets/carnet.jpg';
+  import jorge from '$lib/assets/jorge.jpg';
+  import diploma from '$lib/assets/diploma.jpg';
+  import registro from '$lib/assets/registro.jpg';
+  import libro from '$lib/assets/libro.jpg';
+  import senado from '$lib/assets/senado.jpg';
 
-  import Section from '$lib/Section.svelte'
+  import Section from '$lib/Section.svelte';
+  import ServiceBox from '$lib/ServiceBox.svelte';
+
+  const services = [
+    {
+      title: 'Familiar',
+      description:
+        'Aceptación o renuncia de herencia. Autorizaciones de Viajes para menores legalizadas y registradas. Convenciones Matrimoniales. Cambio de regimen Patrimonial Matrimonial. Certificación de firmas, fotocopias y fotografías. Delegación de la responsabilidad parental. Disolución de Sociedad Conyugal. Donaciones. Particiones Hereditarias y Judiciales. Testamentos. Uniones convivenciales y pactos de convivencia.'
+    },
+    {
+      title: 'Bancario',
+      description:
+        'Cancelación y Constitución de Hipotecas en Capital Federal y en la Provincia de Buenos Aires. Certificación de firmas. Cesión de Derechos y Créditos. Fianzas. Poderes administrativos y bancarios, entre otros.'
+    },
+    {
+      title: 'Corporativo',
+      description:
+        'Actas de Notificación, Inserción de Actas de Consorcio y Sorteo. Constitución de Sociedades (S.A., S.A.S., S.R.L.) y todos los actos societarios dentro del ámbito de la Capital Federal. Contrato Asociativos (U.T.E., Consorcios de cooperación, etc.). Certificación de firmas, fotocopias y fotografías. Rúbricas de Libros por ante Inspección General de Justicia.'
+    },
+    {
+      title: 'Inmobiliario',
+      description:
+        'Afectación y Desafectación a Protección de la Vivienda (antes Bien de Familia). Compraventas de inmuebles en Capital Federal y en la Provincia de Buenos Aires. Certificación de firmas, fotocopias y fotografías. Constitución, desafectación y renuncia de Usufructo. Contratos de locación. Contratos onerosos de renta vitalicia. Derecho Real de Propiedad Horizontal y más...'
+    },
+    {
+      title: 'Notariales',
+      description:
+        'Derecho real de Superficie. Fideicomisos (ordinarios, financieros, públicos, privados, de garantía, de administración, etc.). Reordenamiento parcelario, unificación, planimetría. Transferencias de dominio fiduciario.'
+    },
+    {
+      title: 'Automotores',
+      description:
+        'Autorizaciones de Manejo Legalizadas y registradas. Certificación de firmas en formularios 08, 02, 04, entre otros. Certificación de fotocopias y fotografías. Poderes para Seguros, siniestros, etc...'
+    }
+  ];
 </script>
 
 <svelte:head>
@@ -55,81 +89,15 @@
   </header>
   <Section name="Servicios">
     <ul class="flex flex-wrap gap-1 sm:gap-8">
-      <li
-        class="sm:max-w-[45%] bg-purple-400/20 rounded sm:rounded-lg p-2 sm:p-4"
-      >
-        <h4>Familiar</h4>
-        <small>
-          Aceptación o renuncia de herencia. Autorizaciones de Viajes para
-          menores legalizadas y registradas. Convenciones Matrimoniales. Cambio
-          de regimen Patrimonial Matrimonial. Certificación de firmas,
-          fotocopias y fotografías. Delegación de la responsabilidad parental.
-          Disolución de Sociedad Conyugal. Donaciones. Particiones Hereditarias
-          y Judiciales. Testamentos. Uniones convivenciales y pactos de
-          convivencia.
-        </small>
-      </li>
-      <li
-        class="sm:max-w-[45%] bg-purple-400/10 rounded sm:rounded-lg p-2 sm:p-4"
-      >
-        <h4>Bancario</h4>
-        <small>
-          Cancelación y Constitución de Hipotecas en Capital Federal y en la
-          Provincia de Buenos Aires. Certificación de firmas. Cesión de Derechos
-          y Créditos. Fianzas. Poderes administrativos y bancarios, entre otros.
-        </small>
-      </li>
-      <li
-        class="sm:max-w-[45%] bg-purple-400/20 sm:bg-purple-400/10 rounded-lg p-4"
-      >
-        <h4>CORPORATIVO</h4>
-        <small>
-          Actas de Notificación, Inserción de Actas de Consorcio y Sorteo.
-          Constitución de Sociedades (S.A., S.A.S., S.R.L.) y todos los actos
-          societarios dentro del ámbito de la Capital Federal. Contrato
-          Asociativos (U.T.E., Consorcios de cooperación, etc.). Certificación
-          de firmas, fotocopias y fotografías. Rúbricas de Libros por ante
-          Inspección General de Justicia.
-        </small>
-      </li>
-      <li
-        class="sm:max-w-[45%] bg-purple-400/10 sm:bg-purple-400/20 rounded-lg p-4"
-      >
-        <h4>INMOBILIARIO</h4>
-        <small>
-          Afectación y Desafectación a Protección de la Vivienda (antes Bien de
-          Familia). Compraventas de inmuebles en Capital Federal y en la
-          Provincia de Buenos Aires. Certificación de firmas, fotocopias y
-          fotografías. Constitución, desafectación y renuncia de Usufructo.
-          Contratos de locación. Contratos onerosos de renta vitalicia. Derecho
-          Real de Propiedad Horizontal y más...
-        </small>
-      </li>
-      <li
-        class="sm:max-w-[45%] bg-purple-400/20 sm:bg-purple-400/20 rounded-lg p-4"
-      >
-        <h4>NOTARIALES</h4>
-        <small>
-          Derecho real de Superficie. Fideicomisos (ordinarios, financieros,
-          públicos, privados, de garantía, de administración, etc.).
-          Reordenamiento parcelario, unificación, planimetría. Transferencias de
-          dominio fiduciario.
-        </small>
-      </li>
-      <li
-        class="sm:max-w-[45%] bg-purple-400/10 sm:bg-purple-400/10 rounded-lg p-4"
-      >
-        <h4>AUTOMOTORES</h4>
-        <small>
-          Autorizaciones de Manejo Legalizadas y registradas. Certificación de
-          firmas en formularios 08, 02, 04, entre otros. Certificación de
-          fotocopias y fotografías. Poderes para Seguros, siniestros, etc...
-        </small>
-      </li>
+      {#each services as service}
+        <ServiceBox title={service.title}>
+          {service.description}
+        </ServiceBox>
+      {/each}
     </ul>
   </Section>
   <Section name="Trayectoria">
-    <article class="py-2 text-sailing-blue-dark">
+    <article class="py-2">
       <img
         class="self-center"
         alt="Patricia Lanzón"
@@ -209,8 +177,6 @@
       </p>
     </article>
   </Section>
-  <Section name="Actualidad docente">
-  </Section>
-  <Section name="Derecho de la vejez">
-  </Section>
+  <Section name="Actualidad docente">Próximamente...</Section>
+  <Section name="Derecho de la vejez">Próximamente...</Section>
 </main>
