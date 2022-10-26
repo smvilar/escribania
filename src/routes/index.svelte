@@ -53,7 +53,7 @@
       class="flex flex-col items-center pt-4 px-2 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm"
     >
       <div class="w-full max-w-screen-lg">
-        <section class="pb-4 sm:pb-8">
+        <section class="pb-8">
           <h1 class="border-b-2 border-purple-400">Patricia A. Lanzón</h1>
           <h2 class="mb-2 sm:mb-4">Escribana</h2>
           <h4>Registro Notarial 570</h4>
@@ -78,7 +78,7 @@
             >
           </li>
         </ul>
-        <nav class="mt-4 sm:mt-16 text-center">
+        <nav class="mt-8 sm:mt-16 text-center">
           <a href="#servicios">Servicios</a> •
           <a href="#trayectoria">Trayectoria</a> •
           <a href="#actualidad docente">Actualidad docente</a> •
