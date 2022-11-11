@@ -6,10 +6,6 @@
 @tailwind utilities;
 
 @layer base {
-  header {
-    @apply mb-2;
-  }
-
   h1,
   h2,
   h3 {
@@ -30,6 +26,7 @@
   h3 {
     @apply text-lg;
     @apply sm:text-2xl;
+    @apply uppercase;
   }
 
   h4 {

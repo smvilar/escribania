@@ -11,34 +11,20 @@
 
   const services = [
     {
-      title: 'Familiar',
       description:
-        'Aceptación o renuncia de herencia. Autorizaciones de Viajes para menores legalizadas y registradas. Convenciones Matrimoniales. Cambio de regimen Patrimonial Matrimonial. Certificación de firmas, fotocopias y fotografías. Delegación de la responsabilidad parental. Disolución de Sociedad Conyugal. Donaciones. Particiones Hereditarias y Judiciales. Testamentos. Uniones convivenciales y pactos de convivencia.'
+        'Atención personalizada y sin intermediarios en cumplimiento del amplio espectro de la función notarial en nuestro país.'
     },
     {
-      title: 'Bancario',
       description:
-        'Cancelación y Constitución de Hipotecas en Capital Federal y en la Provincia de Buenos Aires. Certificación de firmas. Cesión de Derechos y Créditos. Fianzas. Poderes administrativos y bancarios, entre otros.'
+        'Incluye el asesoramiento previo en todas las consultas, en especial para operaciones inmobiliarias, fideicomisos, hipotecas y actos de transferencia de derechos de toda clase. Además de los servicios de certificación de firmas y fotocopias.'
     },
     {
-      title: 'Corporativo',
       description:
-        'Actas de Notificación, Inserción de Actas de Consorcio y Sorteo. Constitución de Sociedades (S.A., S.A.S., S.R.L.) y todos los actos societarios dentro del ámbito de la Capital Federal. Contrato Asociativos (U.T.E., Consorcios de cooperación, etc.). Certificación de firmas, fotocopias y fotografías. Rúbricas de Libros por ante Inspección General de Justicia.'
+        'Actas de constatación de hechos, notificación, y demás casos en resguardo de derechos. Y todo lo relacionado con firma digital y los servicios de tipo remoto.'
     },
     {
-      title: 'Inmobiliario',
       description:
-        'Afectación y Desafectación a Protección de la Vivienda (antes Bien de Familia). Compraventas de inmuebles en Capital Federal y en la Provincia de Buenos Aires. Certificación de firmas, fotocopias y fotografías. Constitución, desafectación y renuncia de Usufructo. Contratos de locación. Contratos onerosos de renta vitalicia. Derecho Real de Propiedad Horizontal y más...'
-    },
-    {
-      title: 'Notariales',
-      description:
-        'Derecho real de Superficie. Fideicomisos (ordinarios, financieros, públicos, privados, de garantía, de administración, etc.). Reordenamiento parcelario, unificación, planimetría. Transferencias de dominio fiduciario.'
-    },
-    {
-      title: 'Automotores',
-      description:
-        'Autorizaciones de Manejo Legalizadas y registradas. Certificación de firmas en formularios 08, 02, 04, entre otros. Certificación de fotocopias y fotografías. Poderes para Seguros, siniestros, etc...'
+        'Por el momento, no podemos casarte ni divorciarte, como en muchos otros países…'
     }
   ];
 </script>
@@ -48,49 +34,19 @@
 </svelte:head>
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
-  <header class="w-full bg-banner bg-cover text-slate-100">
-    <div
-      class="flex flex-col items-center pt-4 px-2 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm"
-    >
-      <div class="w-full max-w-screen-lg">
-        <section class="pb-8">
-          <h1 class="border-b-2 border-purple-400">Patricia A. Lanzón</h1>
-          <h2 class="mb-2 sm:mb-4">Escribana</h2>
-          <h4>Registro Notarial 570</h4>
-          <h4>Matrícula 4344</h4>
-        </section>
-        <ul>
-          <li>
-            📞 Solicite turno al <a href="tel:+541143142009">4314-2009</a> ó
-            <a href="tel:+541143148715">4314-8815</a>
-          </li>
-          <li>
-            🏢 <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://goo.gl/maps/rYGGcNGqypjxgNWn9"
-              >Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a
-            >
-          </li>
-          <li>
-            📧 <a href="mailto:escribanialanzon@gmail.com"
-              >escribanialanzon@gmail.com</a
-            >
-          </li>
-        </ul>
-        <nav class="mt-8 sm:mt-16 text-center">
-          <a href="#servicios">Servicios</a> •
-          <a href="#trayectoria">Trayectoria</a> •
-          <a href="#actualidad docente">Actualidad docente</a> •
-          <a href="#derecho de la vejez">Derecho de la vejez</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <section class="flex w-full bg-purple-300 py-2">
+    <img
+      class="m-auto"
+      alt="Patricia Lanzón"
+      width="400"
+      height="400"
+      src={carnet}
+    />
+  </section>
   <Section name="Servicios">
     <ul class="flex flex-wrap gap-1 sm:gap-8">
       {#each services as service}
-        <ServiceBox title={service.title}>
+        <ServiceBox>
           {service.description}
         </ServiceBox>
       {/each}
@@ -98,13 +54,6 @@
   </Section>
   <Section name="Trayectoria">
     <article class="py-2">
-      <img
-        class="self-center"
-        alt="Patricia Lanzón"
-        width="400"
-        height="400"
-        src={carnet}
-      />
       <img
         class=""
         alt="Jorge M. Lanzón"
@@ -178,5 +127,4 @@
     </article>
   </Section>
   <Section name="Actualidad docente">Próximamente...</Section>
-  <Section name="Derecho de la vejez">Próximamente...</Section>
 </main>
