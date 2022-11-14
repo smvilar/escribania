@@ -30,10 +30,10 @@
       </ul>
     </div>
     <nav class="mt-8 sm:mt-16 p-1 text-center bg-slate-100/20 w-full">
-      <a href="/#servicios">Servicios</a> •
-      <a href="/#trayectoria">Trayectoria</a> •
-      <a href="/#actualidad docente">Actualidad docente</a> •
-      <a href="/autoproteccion">Derecho de autoprotección</a>
+      <a href="#servicios">Servicios</a> •
+      <a href="#trayectoria">Trayectoria</a> •
+      <a href="#actualidad docente">Actualidad docente</a> •
+      <a href="#autoproteccion">Derecho de autoprotección</a>
     </nav>
   </div>
 </header>

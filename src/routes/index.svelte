@@ -8,6 +8,7 @@
 
   import Section from '$lib/Section.svelte';
   import ServiceBox from '$lib/ServiceBox.svelte';
+  import Autoproteccion from '$lib/Autoproteccion.svelte';
 
   const services = [
     {
@@ -127,4 +128,9 @@
     </article>
   </Section>
   <Section name="Actualidad docente">Próximamente...</Section>
+  <div class="w-full bg-purple-100">
+    <Section name="Autoproteccion" hideName>
+      <Autoproteccion />
+    </Section>
+  </div>
 </main>
