@@ -127,10 +127,10 @@
       </p>
     </article>
   </Section>
-  <Section name="Actualidad docente">Próximamente...</Section>
   <div class="w-full bg-purple-100">
     <Section name="Autoproteccion" hideName>
       <Autoproteccion />
     </Section>
   </div>
+  <Section name="Actualidad docente">Próximamente...</Section>
 </main>
