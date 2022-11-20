@@ -35,53 +35,44 @@
 </svelte:head>
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
-  <section class="flex w-full bg-purple-300 py-2">
+  <div class="sm:flex">
     <img
-      class="m-auto"
+      class="mx-auto my-4 sm:m-auto order-last"
       alt="Patricia Lanzón"
       width="400"
       height="400"
       src={carnet}
     />
-  </section>
-  <Section name="Servicios">
-    <ul class="flex flex-wrap gap-1 sm:gap-8">
-      {#each services as service}
-        <ServiceBox>
-          {service.description}
-        </ServiceBox>
-      {/each}
-    </ul>
-  </Section>
+    <Section name="Servicios">
+      <ul class="flex flex-wrap gap-1 sm:gap-8">
+        {#each services as service}
+          <ServiceBox>
+            {service.description}
+          </ServiceBox>
+        {/each}
+      </ul>
+    </Section>
+  </div>
   <Section name="Trayectoria">
-    <article class="py-2">
-      <img
-        class=""
-        alt="Jorge M. Lanzón"
-        width="400"
-        height="400"
-        src={jorge}
-      />
-      <p>Escribano Jorge Mario Lanzón. Fundador.</p>
-      <img
-        class="float-left mr-2"
-        alt="Recibida de Abogada"
-        width="400"
-        height="400"
-        src={diploma}
-      />
-      <p class="p-2 sm:text-lg">
+    <article class="py-2 grid grid-cols-1 sm:grid-cols-5 gap-4">
+      <div class="col-span-full">
+        <img alt="Jorge M. Lanzón" width="400" height="400" src={jorge} />
+        <p><strong>Escribano Jorge Mario Lanzón.</strong> Fundador.</p>
+      </div>
+      <p class="sm:text-lg col-span-3">
         <strong>Patricia Adriana Lanzón</strong> es escribana titular del Registro
         570 de la Ciudad autónoma de Buenos Aires desde 1995, por concurso de oposición
         y antecedentes, con título de Abogada de la Universidad de Buenos Aires.
       </p>
       <img
+        class="col-span-2"
         alt="Colegio de Escribanos"
         width="400"
         height="400"
         src={registro}
       />
-      <p class="clear-left p-2 sm:text-lg">
+      <img class="col-span-2" alt="Publicación de libro" src={libro} />
+      <p class="sm:text-lg col-span-3">
         Desde 2007 participa de la organización del <strong
           >registro de actos de autoprotección</strong
         >
@@ -98,23 +89,7 @@
         <strong>Actos de autoprotección</strong> en el Colegio de Escribanos de Salta,
         Argentina.
       </p>
-      <div class="float-left mr-2">
-        <img
-          class="sm:w-60"
-          alt="Publicación de libro"
-          width="400"
-          height="400"
-          src={libro}
-        />
-        <img
-          class="sm:w-60"
-          alt="En el Senado de la Nación"
-          width="400"
-          height="400"
-          src={senado}
-        />
-      </div>
-      <p class="p-2 sm:text-lg">
+      <p class="sm:text-lg col-span-3">
         Durante el año 2020 forma virtual ha participado de charlas virtuales
         sobre el tema para abogados y escribanos de Córdoba, Argentina así como
         para colegas de su misma Ciudad. Ha publicado diversos artículos y en
@@ -125,6 +100,13 @@
         finalizando la Tesis de la Maestría sobre Derecho de la Vejez en la Universidad
         Nacional de Córdoba, Argentina.
       </p>
+      <img
+        class="col-span-2"
+        alt="En el Senado de la Nación"
+        width="400"
+        height="400"
+        src={senado}
+      />
     </article>
   </Section>
   <div class="w-full bg-purple-100">
