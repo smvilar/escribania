@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-365c5aa5.js",
+    "file": "start-c8a3b6b8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -13,7 +13,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-5b8fbabd.js",
+    "file": "pages/__layout.svelte-bcf2d23b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -21,7 +21,7 @@
       "_index-35803d2f.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-078c06d9.css"
+      "assets/pages/__layout.svelte-19d78f51.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -34,7 +34,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-50aae98e.js",
+    "file": "pages/index.svelte-40864cae.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -44,7 +44,6 @@
     "assets": [
       "assets/carnet-eeb33e53.jpg",
       "assets/jorge-ea3c5d3b.jpg",
-      "assets/diploma-238f8548.jpg",
       "assets/registro-61c3e0db.jpg",
       "assets/libro-a1e7defe.jpg",
       "assets/senado-f970bc89.jpg"
