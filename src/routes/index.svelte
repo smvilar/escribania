@@ -53,6 +53,20 @@
       </ul>
     </Section>
   </div>
+  <Section name="Novedades">
+    <ul
+      class="bg-purple-100/80 rounded sm:rounded-lg px-6 sm:px-8 py-2 list-disc"
+    >
+      <li>
+        Publicación en la Revista del Notariado: <a
+          class="font-bold text-purple-800"
+          href="https://www.revista-notariado.org.ar/index.php/2022/11/la-vivienda-como-instrumento-de-dominacion-generador-de-situaciones-de-vulnerabilidad-te-saco-la-casa/"
+          >La vivienda como instrumento de dominación generador de situaciones
+          de vulnerabilidad. «Te saco la casa»</a
+        >
+      </li>
+    </ul>
+  </Section>
   <Section name="Trayectoria">
     <article class="py-2 grid grid-cols-1 sm:grid-cols-5 gap-4">
       <div class="col-span-full">
@@ -114,5 +128,4 @@
       <Autoproteccion />
     </Section>
   </div>
-  <Section name="Actualidad docente">Próximamente...</Section>
 </main>

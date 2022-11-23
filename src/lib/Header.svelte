@@ -1,3 +1,12 @@
+<script lang="ts">
+  const sections = [
+    { href: '#servicios', name: 'Servicios' },
+    { href: '#novedades', name: 'Novedades' },
+    { href: '#trayectoria', name: 'Trayectoria' },
+    { href: '#autoproteccion', name: 'Derecho de autoprotección' }
+  ];
+</script>
+
 <header class="w-full bg-banner bg-cover text-slate-100">
   <div
     class="flex flex-col items-center pt-8 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm"
@@ -30,10 +39,12 @@
       </ul>
     </div>
     <nav class="p-1 text-center bg-slate-100/20 w-full">
-      <a href="#servicios">Servicios</a> •
-      <a href="#trayectoria">Trayectoria</a> •
-      <a href="#autoproteccion">Derecho de autoprotección</a> •
-      <a href="#actualidad docente">Actualidad docente</a>
+      {#each sections as section, i}
+        <a href={section.href}>{section.name}</a>
+        {#if i !== sections.length - 1}
+          •&nbsp;
+        {/if}
+      {/each}
     </nav>
   </div>
 </header>
