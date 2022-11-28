@@ -1,9 +1,7 @@
 <script lang="ts">
   import carnet from '$lib/assets/carnet.jpg';
   import jorge from '$lib/assets/jorge.jpg';
-  import diploma from '$lib/assets/diploma.jpg';
   import registro from '$lib/assets/registro.jpg';
-  import libro from '$lib/assets/libro.jpg';
   import senado from '$lib/assets/senado.jpg';
 
   import Section from '$lib/Section.svelte';
@@ -13,19 +11,25 @@
   const services = [
     {
       description:
-        'Atención personalizada y sin intermediarios en cumplimiento del amplio espectro de la función notarial en nuestro país.'
+        'Atención personalizada enfocada en la adecuación de tus necesidades a la ley vigente en cada caso, en cumplimiento de la función notarial en nuestro país.'
     },
     {
       description:
-        'Incluye el asesoramiento previo en todas las consultas, en especial para operaciones inmobiliarias, fideicomisos, hipotecas y actos de transferencia de derechos de toda clase. Además de los servicios de certificación de firmas y fotocopias.'
+        'Siempre con el debido asesoramiento previo en todo lo referido a operaciones inmobiliarias, testamentos, hipotecas, autorizaciones y poderes, planificación del patrimonio, donaciones y actos de cesión de derechos de toda clase.'
     },
     {
       description:
-        'Actas de constatación de hechos, notificación, y demás casos en resguardo de derechos. Y todo lo relacionado con firma digital y los servicios de tipo remoto.'
+        'Certificación de firmas y fotocopias en papel y en forma digital.'
+    },
+    {
+      description: 'Legalizaciones y apostillas.'
+    },
+    {
+      description: 'Actas de constatación de hechos, de notificación, y otras.'
     },
     {
       description:
-        'Por el momento, no podemos casarte ni divorciarte, como en muchos otros países…'
+        'Actos de autoprotección, directivas médicas anticipadas, nombramiento del propio curador, etc.'
     }
   ];
 </script>
@@ -35,16 +39,14 @@
 </svelte:head>
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
-  <div class="sm:flex">
+  <div class="sm:flex max-w-screen-lg">
     <img
-      class="mx-auto my-4 sm:m-auto order-last"
+      class="mx-auto my-4 sm:m-auto order-last sm:p-4 w-64"
       alt="Patricia Lanzón"
-      width="400"
-      height="400"
       src={carnet}
     />
     <Section name="Servicios">
-      <ul class="flex flex-wrap gap-1 sm:gap-8">
+      <ul class="grid sm:grid-cols-2 gap-1 sm:gap-4">
         {#each services as service}
           <ServiceBox>
             {service.description}
@@ -68,59 +70,54 @@
     </ul>
   </Section>
   <Section name="Trayectoria">
-    <article class="py-2 grid grid-cols-1 sm:grid-cols-5 gap-4">
-      <div class="col-span-full">
-        <img alt="Jorge M. Lanzón" width="400" height="400" src={jorge} />
-        <p><strong>Escribano Jorge Mario Lanzón.</strong> Fundador.</p>
-      </div>
-      <p class="sm:text-lg col-span-3">
-        <strong>Patricia Adriana Lanzón</strong> es escribana titular del Registro
-        570 de la Ciudad autónoma de Buenos Aires desde 1995, por concurso de oposición
-        y antecedentes, con título de Abogada de la Universidad de Buenos Aires.
+    <article class="flex flex-col sm:grid grid-cols-8 gap-4">
+      <img class="col-span-2" alt="Jorge M. Lanzón" src={jorge} />
+      <p class="sm:text-lg col-span-6">
+        <strong>Patricia Adriana Lanzón</strong>, siendo Abogada de la
+        Universidad de Buenos Aires, se incorporó en su juventud en la
+        Escribanía de su padre <strong>Esc. Jorge Mario Lanzón</strong>,
+        llegando a ser escribana adscripta en 1995 y actualmente escribana
+        titular del Registro 570 de la Ciudad autónoma de Buenos Aires, cargo
+        obtenido por concurso de oposición y antecedentes.<br />
+        A lo largo del ejercicio de la profesión ha sido tres veces integrante del
+        Consejo Directivo del Colegio, electa para los cargos de Vocal y Secretaria,
+        participando así de la dirección de la institución que regula la profesión
+        en el ámbito de la C.A.B.A.
       </p>
-      <img
-        class="col-span-2"
-        alt="Colegio de Escribanos"
-        width="400"
-        height="400"
-        src={registro}
-      />
-      <img class="col-span-2" alt="Publicación de libro" src={libro} />
-      <p class="sm:text-lg col-span-3">
+      <p class="sm:text-lg col-span-6">
         Desde 2007 participa de la organización del <strong
-          >registro de actos de autoprotección</strong
+          >Registro de actos de autoprotección</strong
         >
-        del Colegio de Escribanos de CABA, y es
+        del Colegio de Escribanos de C.A.B.A, y es
         <strong
-          >Presidenta de la Comisión de Derechos Humanos, Personalísimos y de
+          >presidenta de la Comisión de Derechos Humanos, Personalísimos y de
           autoprotección</strong
         >
-        de dicha institución desde el año 2017. Activamente participa de la docencia
-        sobre este tema, entre otros eventos: en 2013 formó parte del
+        de dicha institución. Con marcada pasión por la difusión y docencia sobre
+        esta novedosa temática, ha dado charlas en distintas localidades de nuestro
+        país y países limítrofes; en 2013 formó parte del
         <strong>Taller sobre Derecho de autoprotección</strong>
         organizado por el Consejo Federal del Notariado Argentino; en 2018 participó
         del dictado del <strong>Seminario Mario Zinny</strong> sobre
         <strong>Actos de autoprotección</strong> en el Colegio de Escribanos de Salta,
-        Argentina.
+        Argentina, entre otros eventos.
       </p>
-      <p class="sm:text-lg col-span-3">
-        Durante el año 2020 forma virtual ha participado de charlas virtuales
-        sobre el tema para abogados y escribanos de Córdoba, Argentina así como
-        para colegas de su misma Ciudad. Ha publicado diversos artículos y en
-        JUNIO de 2017 el libro <strong>Directivas Anticipadas</strong> de Di Lalla
-        Ediciones. En 2022 participó, junto con otros colegas de diversas jurisdicciones,
-        de la redacción del Proyecto de Ley 669/22 de Ley Nacional de Autoprotección
-        y mandato preventivo, en tratamiento en el Senado de la Nación. Se encuentra
-        finalizando la Tesis de la Maestría sobre Derecho de la Vejez en la Universidad
-        Nacional de Córdoba, Argentina.
+      <img class="col-span-2" alt="Colegio de Escribanos" src={registro} />
+      <p class="sm:text-lg col-span-full">
+        Durante el año 2020 en forma virtual ha participado de charlas sobre el
+        tema para abogados y escribanos de Córdoba, Argentina, así como para
+        colegas de su misma Ciudad. Ha publicado diversos artículos y en JUNIO
+        de 2017 el libro <strong>Directivas Anticipadas</strong> de Di Lalla Ediciones.
       </p>
-      <img
-        class="col-span-2"
-        alt="En el Senado de la Nación"
-        width="400"
-        height="400"
-        src={senado}
-      />
+      <img class="col-span-2" alt="En el Senado de la Nación" src={senado} />
+      <p class="sm:text-lg col-span-6">
+        En 2022 participó, junto con otros colegas de diversas jurisdicciones,
+        de la redacción del <strong>Proyecto de Ley</strong> 669/22 de Ley
+        Nacional de Autoprotección y mandato preventivo, en tratamiento en el
+        Senado de la Nación.<br />Se encuentra finalizando la Tesis de la
+        Maestría sobre <strong>“Derecho de la Vejez”</strong> en la Universidad Nacional
+        de Córdoba, Argentina.
+      </p>
     </article>
   </Section>
   <div class="w-full bg-purple-100">

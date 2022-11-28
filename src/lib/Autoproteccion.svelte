@@ -1,8 +1,17 @@
+<script lang="ts">
+  import libro from '$lib/assets/libro.jpg';
+</script>
+
 <article class="font-serif p-2 max-w-screen-lg bg-white m-auto">
   <h2 class="mt-2 mb-4 sm:mt-4 sm:mb-8">
     ¿Qué es el derecho de autoprotección?
   </h2>
-  <p>
+  <img
+    class="sm:float-left sm:mr-4 w-80"
+    alt="Publicación de libro"
+    src={libro}
+  />
+  <p class="mt-2">
     Se trata de todas las <i
       >disposiciones, instrucciones y decisiones previas</i
     >
