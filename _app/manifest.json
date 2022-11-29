@@ -1,0 +1,55 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-0a496cf0.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-c9937526.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-f226570c.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c9937526.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-46e3e2ea.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-a8dd9028.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c9937526.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-59795531.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-c9937526.js"
+    ],
+    "assets": [
+      "assets/carnet-eeb33e53.jpg",
+      "assets/jorge-ea3c5d3b.jpg",
+      "assets/registro-61c3e0db.jpg",
+      "assets/senado-f970bc89.jpg",
+      "assets/libro-a1e7defe.jpg"
+    ]
+  },
+  "_index-c9937526.js": {
+    "file": "chunks/index-c9937526.js"
+  }
+}
