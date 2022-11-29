@@ -1,5 +1,4 @@
-const dev = process.env.NODE_ENV === 'development';
-const basePath = dev ? '' : '/escribania';
+const basePath = process.env.BASE_PATH || '';
 
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,css}'],
