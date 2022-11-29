@@ -15,7 +15,7 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: npm ci
-      - name: Build
+      - name: Build for GitHub Pages
         run: BASE_PATH=/escribania npm run build
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
@@ -23,5 +23,15 @@ jobs:
           keep_history: true
           build_dir: ./build
           jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build for dist (without base path)
+        run: npm run build
+      - name: Publish to dist branch
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          keep_history: true
+          build_dir: ./build
+          target_branch: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
