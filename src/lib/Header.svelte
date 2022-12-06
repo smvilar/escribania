@@ -13,8 +13,8 @@
   >
     <div class="w-full px-2 max-w-screen-lg mb-8 sm:mb-16">
       <section class="pb-8">
-        <h1 class="border-b-2 border-purple-400">Patricia A. Lanzón</h1>
-        <h2 class="mb-2 sm:mb-4">Escribana</h2>
+        <h1 class="border-b-2 border-purple-400">Escribanía Lanzón</h1>
+        <h2 class="mb-2 sm:mb-4">Dra. Patricia A. Lanzón</h2>
         <h4>Registro Notarial 570</h4>
         <h4>Matrícula 4344</h4>
       </section>
