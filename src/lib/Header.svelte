@@ -5,6 +5,14 @@
     { href: '#trayectoria', name: 'Trayectoria' },
     { href: '#autoproteccion', name: 'Derecho de autoprotección' }
   ];
+
+  function scrollIntoSection(
+    ev: MouseEvent & { currentTarget: HTMLAnchorElement }
+  ) {
+    const url = new URL(ev.currentTarget.href);
+    const section = document.querySelector(url.hash);
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 <header class="w-full bg-banner bg-cover text-slate-100">
@@ -40,7 +48,9 @@
     </div>
     <nav class="p-1 text-center bg-slate-100/20 w-full">
       {#each sections as section, i}
-        <a href={section.href}>{section.name}</a>
+        <a href={section.href} on:click|preventDefault={scrollIntoSection}>
+          {section.name}
+        </a>
         {#if i !== sections.length - 1}
           •&nbsp;
         {/if}
