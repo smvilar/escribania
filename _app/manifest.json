@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ea1c0dc0.js",
+    "file": "start-0e6d7122.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -21,7 +21,7 @@
       "_index-c9937526.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-b2badb8c.css"
+      "assets/pages/__layout.svelte-75946f16.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -34,7 +34,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-dfbe0bea.js",
+    "file": "pages/index.svelte-1197026b.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -42,6 +42,7 @@
       "_index-c9937526.js"
     ],
     "assets": [
+      "assets/carnet-eeb33e53.jpg",
       "assets/jorge-ea3c5d3b.jpg",
       "assets/registro-61c3e0db.jpg",
       "assets/senado-f970bc89.jpg",
