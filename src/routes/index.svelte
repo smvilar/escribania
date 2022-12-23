@@ -1,4 +1,5 @@
 <script lang="ts">
+  import carnet from '$lib/assets/carnet.jpg';
   import jorge from '$lib/assets/jorge.jpg';
   import registro from '$lib/assets/registro.jpg';
   import senado from '$lib/assets/senado.jpg';
@@ -38,15 +39,22 @@
 </svelte:head>
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
-  <Section name="Servicios">
-    <ul class="grid sm:grid-cols-2 gap-1 sm:gap-4">
-      {#each services as service}
-        <ServiceBox>
-          {service.description}
-        </ServiceBox>
-      {/each}
-    </ul>
-  </Section>
+  <div class="sm:flex max-w-screen-lg">
+    <Section name="Servicios">
+      <ul class="grid sm:grid-cols-2 gap-1 sm:gap-4">
+        {#each services as service}
+          <ServiceBox>
+            {service.description}
+          </ServiceBox>
+        {/each}
+      </ul>
+    </Section>
+    <img
+      class="mx-auto my-4 sm:m-auto sm:p-4 w-64"
+      alt="Patricia Lanzón"
+      src={carnet}
+    />
+  </div>
   <Section name="Novedades">
     <ul
       class="bg-purple-100/80 rounded sm:rounded-lg px-6 sm:px-8 py-2 list-disc"
