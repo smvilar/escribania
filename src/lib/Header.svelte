@@ -49,7 +49,7 @@
       </ul>
     </div>
     <nav
-      class="p-4 bg-slate-100/10 w-full sm:text-2xl font-bold flex justify-center"
+      class="py-8 sm:py-16 bg-slate-100/10 w-full sm:text-2xl font-bold flex justify-center"
     >
       <div class="flex gap-4 flex-wrap justify-center">
         {#each sections as section, i}
