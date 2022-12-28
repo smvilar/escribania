@@ -12,6 +12,8 @@
     const url = new URL(ev.currentTarget.href);
     const section = document.querySelector(url.hash);
     section.scrollIntoView({ behavior: 'smooth' });
+
+    history.pushState({}, '', url);
   }
 </script>
 
