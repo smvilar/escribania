@@ -17,7 +17,7 @@
 
 <header class="w-full bg-banner bg-cover text-slate-100">
   <div
-    class="flex flex-col items-center pt-8 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm"
+    class="min-h-screen flex flex-col justify-between items-center pt-8 sm:pt-12 backdrop-brightness-50 backdrop-blur-sm"
   >
     <div class="w-full px-2 max-w-screen-lg mb-8 sm:mb-16">
       <section class="pb-8">
@@ -46,15 +46,37 @@
         </li>
       </ul>
     </div>
-    <nav class="p-1 text-center bg-slate-100/20 w-full">
-      {#each sections as section, i}
-        <a href={section.href} on:click|preventDefault={scrollIntoSection}>
-          {section.name}
-        </a>
-        {#if i !== sections.length - 1}
-          •&nbsp;
-        {/if}
-      {/each}
+    <nav
+      class="p-4 bg-slate-100/10 w-full sm:text-2xl font-bold flex justify-center"
+    >
+      <div class="flex gap-4 flex-wrap justify-center">
+        {#each sections as section, i}
+          <a
+            class="inline-block w-40 h-40 sm:w-64 sm:h-64"
+            href={section.href}
+            on:click|preventDefault={scrollIntoSection}
+          >
+            <svg width="100%" height="100%">
+              <defs>
+                <mask id={`mask-${i}`}>
+                  <rect width="100%" height="100%" fill="#ccc" />
+                  <text fill="#000">
+                    {#each section.name.split(' ') as word, j}
+                      <tspan x="1rem" y={`${5 + j * 1.25}em`}>{word}</tspan>
+                    {/each}
+                  </text>
+                </mask>
+              </defs>
+              <rect
+                width="100%"
+                height="100%"
+                fill="white"
+                mask={`url(#mask-${i})`}
+              />
+            </svg>
+          </a>
+        {/each}
+      </div>
     </nav>
   </div>
 </header>
