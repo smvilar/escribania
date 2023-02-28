@@ -30,15 +30,15 @@
       </section>
       <ul>
         <li>
-          📞 Solicite turno al <a href="tel:+541143142009">4314-2009</a> ó
-          <a href="tel:+541143148715">4314-8815</a>
+          📞 Solicite turno al <a href="tel:+541145431676">4543-1676</a> ó
+          <a href="tel:+541145459357">4545-9357</a>
         </li>
         <li>
           🏢 <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://goo.gl/maps/rYGGcNGqypjxgNWn9"
-            >Av. Córdoba 785, 11º piso, oficina 21. CABA, Argentina</a
+            >Echeverría 4230, 2º B. CABA, Argentina</a
           >
         </li>
         <li>
