@@ -37,7 +37,7 @@
           🏢 <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://goo.gl/maps/rYGGcNGqypjxgNWn9"
+            href="https://goo.gl/maps/E6NtDRU2w6JVVo5s7"
             >Echeverría 4230, 2º B. CABA, Argentina</a
           >
         </li>
