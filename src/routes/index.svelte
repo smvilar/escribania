@@ -36,6 +36,7 @@
 
 <svelte:head>
   <title>Escribanía Lanzón</title>
+  <meta name="description" content="Sitio oficial de la Escribanía Lanzón.">
 </svelte:head>
 
 <main class="flex flex-col items-center bg-slate-100 min-h-screen">
